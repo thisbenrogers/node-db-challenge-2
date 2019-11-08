@@ -11,7 +11,6 @@ exports.up = function(knex) {
     project.string('pro_desc', 1024);
 
     project.boolean('completed')
-      .notNullable()
       .defaultTo(false);
 
   })

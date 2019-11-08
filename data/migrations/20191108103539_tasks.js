@@ -10,7 +10,6 @@ exports.up = function(knex) {
     task.string('notes', 1024);
 
     task.boolean('completed')
-      .notNullable()
       .defaultsTo(false);
 
     task.integer('pro_id')
