@@ -4,7 +4,7 @@ const cors = require("cors");
 
 // const logger = require('../middleware/logger');
 
-// const projectRouter = require("../projects/project-router.js");
+const projectRouter = require("../projects/project-router.js");
 // const taskRouter = require("../tasks/task-router.js");
 // const resourceRouter = require('../resources/resource-router');
 
@@ -15,7 +15,7 @@ server.use(helmet());
 server.use(express.json());
 server.use(cors());
 
-// server.use("/api/projects", projectRouter);
+server.use("/api/projects", projectRouter);
 // server.use("/api/tasks", taskRouter);
 // server.use('/api/resources', resourceRouter);
 
